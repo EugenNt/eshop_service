@@ -42,7 +42,15 @@ class ServiceRepositoryFactory:
     def deliteById(self,id):
         if self.id == id:
             self.service.pop(self.id -1 )
-
+class Currency:
+    def __init__(self,id,code,nominal,rate):
+        self.id=id
+        self.code=code
+        self.nominal=nominal
+        self.rate=rate
+    
+    def __repr__(self):
+        return f"id={self.id}\n code={self.code}\n nominal={self.nominal}\n rate={self.rate}"
       
 
 
